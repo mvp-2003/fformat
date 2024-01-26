@@ -1,10 +1,13 @@
 import customtkinter as ctk
-from backend.man import action_here
+from backend.man import action_here, select_file
+
 app = ctk.CTk()
 app.title("FFormat")
 app.geometry("500x500")
 
-button = ctk.CTkButton(app, text="Upload", command=action_here)
-button.pack()
+ButtonSelect = ctk.CTkButton(app, text="Select", command=select_file)
+
+ButtonUpload = ctk.CTkButton(app, text="Upload", command=action_here)
+ButtonUpload.pack()
 
 app.mainloop()
