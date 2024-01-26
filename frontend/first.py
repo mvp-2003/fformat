@@ -7,7 +7,7 @@ app.geometry("500x500")
 
 ButtonSelect = ctk.CTkButton(app, text="Select", command=select_file)
 
-ButtonUpload = ctk.CTkButton(app, text="Upload", command=action_here, fg_color="green")
+ButtonUpload = ctk.CTkButton(app, text="Upload", fg_color="green", command=action_here)
 ButtonUpload.pack()
 
 app.mainloop()
