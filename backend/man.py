@@ -1,8 +1,9 @@
 from PIL import Image
 import glob
 
-def action_here():
-    print("Hello world!")
-
+# Create the function from the fronend first.py file here.
 def select_file():
-    print("Hello world!")
+    pass
+
+def action_here():
+    pass
