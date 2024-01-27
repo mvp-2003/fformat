@@ -1,9 +1,6 @@
 import customtkinter as ctk
 from backend.light import addfile
 
-
-ctk.set_appearance_mode("dark")
-
 app = ctk.CTk()
 app.title("FFormating")
 app.geometry("1200x600")
