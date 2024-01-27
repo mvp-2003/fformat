@@ -3,7 +3,7 @@ import customtkinter as ctk
 import os
 import sys
 sys.path.insert(1, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'backend'))
-from light import *
+from light import addfile
 
 app = ctk.CTk()
 app.title("FFormating")
