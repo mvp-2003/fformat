@@ -16,6 +16,8 @@ entry_field.pack(padx = 25, pady = 25)
 entry_field.place(x = 200, y = 300)
 
 button_to_select = ctk.CTkButton(app, text = "Choose file", fg_color = "blue", command = selectfile)
+button_to_select.pack(padx = 25, pady = 25)
+button_to_select.place(x = 825, y = 300)
 
 button_to_upload = ctk.CTkButton(app, text = "Upload", fg_color = "green", command = addfile)
 button_to_upload.pack(padx = 25, pady = 25)
