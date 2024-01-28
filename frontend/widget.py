@@ -1,11 +1,6 @@
 import customtkinter as ctk
-import os
-import sys
-
-sys.path.insert(1, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'backend'))
-
-from light import addfile
-from upload import selectfile
+from backend.light import addfile
+from backend.upload import selectfile
 
 app = ctk.CTk()
 app.title("FFormating")
