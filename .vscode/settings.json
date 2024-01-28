@@ -2,5 +2,6 @@
     "python.analysis.extraPaths": [
         "./frontend",
         "./backend"
-    ]
+    ],
+    "python.analysis.autoImportCompletions": true
 }
