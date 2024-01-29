@@ -1,4 +1,4 @@
-from tkinter import filedialog
+from customtkinter import filedialog
 
 def selectfile():
     filename = filedialog.askopenfilename()
