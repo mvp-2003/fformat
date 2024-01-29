@@ -25,7 +25,7 @@ file_type_label.place(x = 510, y = 325)
 extension_field = ctk.CTkEntry(app, placeholder_text = "", width = 60, height = 30)
 extension_field.pack(padx = 25, pady = 25)
 extension_field.place(x = 590, y = 325)
-extension_field.configure(state='readonly')
+extension_field.configure(state='disabled')
 
 type_selection_label = ctk.CTkLabel(app, text = "Convery to:", font=("Arial", 16))
 type_selection_label.pack(padx = 25, pady = 25)
