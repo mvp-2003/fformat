@@ -18,9 +18,9 @@ button_to_upload = ctk.CTkButton(app, text = "Upload", fg_color = "green", comma
 button_to_upload.pack(padx = 25, pady = 25)
 button_to_upload.place(x = 540, y = 250)
 
-file_type_labe = ctk.CTkLabel(app, text = "File type:", font=("Arial", 16))
-file_type_labe.pack(padx = 25, pady = 25)
-file_type_labe.place(x = 510, y = 325)
+file_type_label = ctk.CTkLabel(app, text = "File type:", font=("Arial", 16))
+file_type_label.pack(padx = 25, pady = 25)
+file_type_label.place(x = 510, y = 325)
 
 extension_field = ctk.CTkEntry(app, placeholder_text = "", width = 60, height = 30)
 extension_field.pack(padx = 25, pady = 25)
