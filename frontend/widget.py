@@ -1,6 +1,5 @@
 import customtkinter as ctk
 from backend.light import addfile
-from backend.detection import detect
 from frontend.filedialog import selectfile
 
 app = ctk.CTk()
