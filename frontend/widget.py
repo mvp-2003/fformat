@@ -1,6 +1,6 @@
 import customtkinter as ctk
 from backend.light import addfile
-from filedialog import selectfile
+from frontend.filedialog import selectfile
 
 app = ctk.CTk()
 app.title("FFormating")
