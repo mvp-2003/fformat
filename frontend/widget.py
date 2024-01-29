@@ -1,5 +1,6 @@
 import customtkinter as ctk
 from backend.light import addfile
+from backend.detection import detect
 from frontend.filedialog import selectfile
 
 app = ctk.CTk()
@@ -18,9 +19,13 @@ button_to_upload = ctk.CTkButton(app, text = "Upload", fg_color = "green", comma
 button_to_upload.pack(padx = 25, pady = 25)
 button_to_upload.place(x = 540, y = 250)
 
+file_type_labe = ctk.CTkLabel(app, text = "File type:")
+file_type_labe.pack(padx = 25, pady = 25)
+file_type_labe.place(x = 520, y = 325)
+
 extension_field = ctk.CTkEntry(app, placeholder_text = "", width = 60, height = 30)
 extension_field.pack(padx = 25, pady = 25)
-extension_field.place(x = 540, y = 325)
+extension_field.place(x = 580, y = 325)
 extension_field.configure(state='readonly')
 
 app.mainloop()
