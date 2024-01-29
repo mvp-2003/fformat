@@ -4,5 +4,14 @@
         "./backend"
     ],
     "python.analysis.autoImportCompletions": true,
-    "python.analysis.typeCheckingMode": "basic"
+    "python.analysis.typeCheckingMode": "basic",
+    "editor.tabSize": 4,
+    "editor.autoIndent": "full",
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "black",
+    "python.linting.enabled": true,
+    "python.autoComplete.addBrackets": true,
+    "python.testing.unittestEnabled": false, 
+    "python.testing.pytestEnabled": true, 
+    "python.testing.pytestArgs": ["tests"]
 }
