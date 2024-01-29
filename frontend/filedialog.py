@@ -1,5 +1,5 @@
-import customtkinter
+from tkinter import filedialog
 
 def selectfile():
-    # will be implemented later
-    pass
+    filename = filedialog.askopenfilename()
+    print(filename)
