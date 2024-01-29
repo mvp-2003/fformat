@@ -3,7 +3,7 @@ from backend.light import addfile
 from frontend.filedialog import selectfile
 
 app = ctk.CTk()
-app.title("FFormating")
+app.title("FFormat")
 app.geometry("1250x650")
 
 entry_field = ctk.CTkEntry(app, placeholder_text = "Select a file to upload", width = 600, height = 30)
