@@ -1,3 +1,4 @@
+from math import e
 import os
 
 def addfile(entry_field):
