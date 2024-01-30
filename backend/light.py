@@ -1,6 +1,7 @@
 import os
 
-def addfile(entry_field):
+def addfile(entry_field, extension_label):
     filepath = entry_field.get()
     entry_field.delete(0, 'end')
-    return os.path.splitext(filepath)[1]
+    extension = os.path.splitext(filepath)[1]
+    extension_label.configure(text = extension)
