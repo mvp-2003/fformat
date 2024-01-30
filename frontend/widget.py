@@ -40,7 +40,7 @@ type_selection = ctk.CTkComboBox(app, values = types, width = 100, height = 30)
 type_selection.pack(padx = 25, pady = 25)
 type_selection.place(x = 600, y = 375)
 
-convert_button = ctk.CTkButton(app, text = "Convert", fg_color = "green", command = lambda: convert(type_selection))
+convert_button = ctk.CTkButton(app, text = "Convert", fg_color = "green", command = lambda: convert(entry_field, type_selection))
 convert_button.pack(padx = 25, pady = 25)
 convert_button.place(x = 725, y = 375)
 

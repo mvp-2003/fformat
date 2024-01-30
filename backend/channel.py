@@ -4,7 +4,7 @@ from backend.conversions.png2jpg import png_to_jpg
 from backend.conversions.jpg2jpeg import jpg_to_jpeg'''
 
 
-def convert(type_selection):
+def convert(entry_field, type_selection):
     typec = type_selection.get()
 
     if typec == ".jpg":
