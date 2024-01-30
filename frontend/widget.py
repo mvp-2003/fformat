@@ -1,6 +1,7 @@
 import customtkinter as ctk
 from backend.light import addfile
 from frontend.filedialog import selectfile
+from backend.channel import convert
 
 app = ctk.CTk()
 app.title("FFormat")
@@ -20,7 +21,7 @@ button_to_upload.place(x = 540, y = 250)
 
 file_type_label = ctk.CTkLabel(app, text = "File type:", font=("Arial", 16))
 file_type_label.pack(padx = 25, pady = 25)
-file_type_label.place(x = 510, y = 325)
+file_type_label.place(x = 510, y = 315)
 
 no_file_label = ctk.CTkLabel(app, text = "", font=("Arial", 16))
 no_file_label.pack(padx = 25, pady = 25)
@@ -28,9 +29,9 @@ no_file_label.place(x = 200, y = 225)
 
 extension_label = ctk.CTkLabel(app, text = "", font=("Arial", 16), fg_color="gray", height=30, width=80)
 extension_label.pack(padx = 25, pady = 25)
-extension_label.place(x = 590, y = 325)
+extension_label.place(x = 590, y = 315)
 
-type_selection_label = ctk.CTkLabel(app, text = "Convery to:", font=("Arial", 16))
+type_selection_label = ctk.CTkLabel(app, text = "Convert to:", font=("Arial", 16))
 type_selection_label.pack(padx = 25, pady = 25)
 type_selection_label.place(x = 500, y = 375)
 
@@ -38,5 +39,9 @@ types = [".jpg", ".jpeg", ".png", ".tif", ".tiff", ".svg"]
 type_selection = ctk.CTkComboBox(app, values = types, width = 100, height = 30)
 type_selection.pack(padx = 25, pady = 25)
 type_selection.place(x = 600, y = 375)
+
+convert_button = ctk.CTkButton(app, text = "Convert", fg_color = "green", command = lambda: convert(type_selection))
+convert_button.pack(padx = 25, pady = 25)
+convert_button.place(x = 725, y = 375)
 
 app.mainloop()
