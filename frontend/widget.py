@@ -15,13 +15,17 @@ button_to_select = ctk.CTkButton(app, text = "Choose file", fg_color = "blue", c
 button_to_select.pack(padx = 25, pady = 25)
 button_to_select.place(x = 825, y = 175)
 
-button_to_upload = ctk.CTkButton(app, text = "Upload", fg_color = "green", command = lambda: addfile(entry_field, extension_label, no_file_label))
+button_to_upload = ctk.CTkButton(app, text = "Upload", fg_color = "green", command = lambda: addfile(entry_field, file_name_label, extension_label, no_file_label))
 button_to_upload.pack(padx = 25, pady = 25)
 button_to_upload.place(x = 540, y = 250)
 
+file_name_label = ctk.CTkLabel(app, text = "File selected:", font=("Arial", 16), fg_color="gray", height=30, width=300)
+file_name_label.pack(padx = 25, pady = 25)
+file_name_label.place(x = 360, y = 315)
+
 file_type_label = ctk.CTkLabel(app, text = "File type:", font=("Arial", 16))
 file_type_label.pack(padx = 25, pady = 25)
-file_type_label.place(x = 510, y = 315)
+file_type_label.place(x = 720, y = 315)
 
 no_file_label = ctk.CTkLabel(app, text = "", font=("Arial", 16))
 no_file_label.pack(padx = 25, pady = 25)
@@ -29,7 +33,7 @@ no_file_label.place(x = 200, y = 225)
 
 extension_label = ctk.CTkLabel(app, text = "", font=("Arial", 16), fg_color="gray", height=30, width=80)
 extension_label.pack(padx = 25, pady = 25)
-extension_label.place(x = 590, y = 315)
+extension_label.place(x = 800, y = 315)
 
 type_selection_label = ctk.CTkLabel(app, text = "Convert to:", font=("Arial", 16))
 type_selection_label.pack(padx = 25, pady = 25)
