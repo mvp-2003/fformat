@@ -8,7 +8,6 @@ app = ctk.CTk()
 app.title("FFormat")
 app.geometry("1250x750")
 
-# Existing UI elements (without repetition)
 entry_field = ctk.CTkEntry(app, placeholder_text="Select a file to upload or type in the absolute path manually", width=600, height=30)
 entry_field.pack(padx=25, pady=25)
 entry_field.place(x=200, y=125)
