@@ -1,2 +1,2 @@
-def jpg_to_jpeg(filename, extension):
+def jpg_to_jpeg(entry_field):
     pass
