@@ -71,6 +71,6 @@ save_button.place(x=575, y=600)
 
 upload_to_label = ctk.CTkLabel(app, text="Upload to:", font=("Arial", 16))
 upload_to_label.pack(padx=25, pady=25)
-upload_to_label.place(x=200, y=465)
+upload_to_label.place(x=485, y=465)
 
 app.mainloop()
