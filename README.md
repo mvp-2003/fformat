@@ -4,5 +4,5 @@ Currently only being made for Windows
 
 Run this application by running the **main.py** file.
 
-Run this coommand int the terminal:
+Run this coommand in the terminal:
 ```python main.py```
