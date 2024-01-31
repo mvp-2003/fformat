@@ -11,3 +11,4 @@ def addfile(entry_field, file_name_label, extension_label, no_file_label):
         file_name, extension = os.path.splitext(file_name_with_extension)
         file_name_label.configure(text = file_name)
         extension_label.configure(text = extension)
+        no_file_label.configure(text = "")
