@@ -53,16 +53,16 @@ new_file_label = ctk.CTkLabel(app, text = "New file:", font=("Arial", 16), fg_co
 new_file_label.pack(padx = 25, pady = 25)
 new_file_label.place(x = 360, y = 400)
 
-save_button = ctk.CTkButton(app, text = "Choose folder: ", fg_color = "green", command = lambda: savefile(entry_field, file_name_label, extension_label, no_file_label))
-save_button.pack(padx = 25, pady = 25)
-save_button.place(x = 575, y = 450)
+choose_folder_button = ctk.CTkButton(app, text = "Choose folder ", fg_color = "green", command = lambda: savefile(entry_field, file_name_label, extension_label, no_file_label))
+choose_folder_button.pack(padx = 25, pady = 25)
+choose_folder_button.place(x = 575, y = 450)
 
 folder_select = ctk.CTkLabel(app, text = "Selected folder: ", font=("Arial", 16))
 folder_select.pack(padx = 25, pady = 25)
-folder_select.place(x = 200, y = 525)
+folder_select.place(x = 150, y = 525)
 
-selected_folder_name = ctk.CTkLabel(app, text = "", font=("Arial", 16), fg_color="gray", height=30, width=600)
+selected_folder_name = ctk.CTkLabel(app, text = "", font=("Arial", 16), fg_color="gray", height=30, width=850)
 selected_folder_name.pack(padx = 25, pady = 25)
-selected_folder_name.place(x = 360, y = 525)
+selected_folder_name.place(x = 300, y = 525)
 
 app.mainloop()
