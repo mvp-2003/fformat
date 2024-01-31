@@ -1,5 +1,9 @@
 from customtkinter import filedialog
 
-def savefile(entry_field, file_name_label, extension_label, no_file_label):
+def choose_folder(selected_folder_name):
     folder = filedialog.askdirectory()
+    selected_folder_name.config(text = folder)
+
+def savefile(entry_field, file_name_label, extension_label, selected_folder_name):
+    pass
     

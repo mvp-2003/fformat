@@ -2,7 +2,7 @@ import customtkinter as ctk
 from backend.light import addfile
 from frontend.filedialog import selectfile
 from backend.channel import convert
-from frontend.savefile import savefile
+from frontend.savefile import choose_folder, savefile
 
 app = ctk.CTk()
 app.title("FFormat")
@@ -53,9 +53,9 @@ new_file_label = ctk.CTkLabel(app, text = "New file:", font=("Arial", 16), fg_co
 new_file_label.pack(padx = 25, pady = 25)
 new_file_label.place(x = 360, y = 400)
 
-choose_folder_button = ctk.CTkButton(app, text = "Choose folder ", fg_color = "green", command = lambda: savefile(entry_field, file_name_label, extension_label, no_file_label))
+choose_folder_button = ctk.CTkButton(app, text = "Choose folder ", fg_color = "blue", command = lambda: choose_folder(selected_folder_name))
 choose_folder_button.pack(padx = 25, pady = 25)
-choose_folder_button.place(x = 575, y = 450)
+choose_folder_button.place(x = 575, y = 465)
 
 folder_select = ctk.CTkLabel(app, text = "Selected folder: ", font=("Arial", 16))
 folder_select.pack(padx = 25, pady = 25)
