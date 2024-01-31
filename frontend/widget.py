@@ -53,11 +53,9 @@ new_file_label = ctk.CTkLabel(app, text="New file:", font=("Arial", 16), fg_colo
 new_file_label.pack(padx=25, pady=25)
 new_file_label.place(x=360, y=400)
 
-# Add a label to display the saved file path
-saved_file_label = ctk.CTkLabel(app, text="", font=("Arial", 16), fg_color="black", height=30, width=600)
+saved_file_label = ctk.CTkLabel(app, text="", font=("Arial", 16), height=30, width=600)
 saved_file_label.pack(padx=25, pady=25)
-saved_file_label.place(x=360, y=450)
-
+saved_file_label.place(x=360, y=650)
 
 choose_folder_button = ctk.CTkButton(app, text="Choose folder ", fg_color="blue", command=lambda: choose_folder(selected_folder_name))
 choose_folder_button.pack(padx=25, pady=25)
