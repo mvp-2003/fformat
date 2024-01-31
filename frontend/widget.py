@@ -49,7 +49,6 @@ convert_button = ctk.CTkButton(app, text="Convert", fg_color="green", command=la
 convert_button.pack(padx=25, pady=25)
 convert_button.place(x=725, y=325)
 
-# New UI elements (without repetition)
 new_file_label = ctk.CTkLabel(app, text="New file:", font=("Arial", 16), fg_color="gray", height=30, width=600)
 new_file_label.pack(padx=25, pady=25)
 new_file_label.place(x=360, y=400)
