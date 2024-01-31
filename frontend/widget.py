@@ -6,7 +6,7 @@ from frontend.savefile import savefile
 
 app = ctk.CTk()
 app.title("FFormat")
-app.geometry("1250x650")
+app.geometry("1250x750")
 
 entry_field = ctk.CTkEntry(app, placeholder_text = "Select a file to upload or type in the absolute path manually", width = 600, height = 30)
 entry_field.pack(padx = 25, pady = 25)
