@@ -4,3 +4,4 @@ __pycache__
 *.txt
 !requirements.txt
 .git
+.venv
