@@ -7,7 +7,13 @@ from frontend.savefile import choose_folder, savefile
 
 app = ctk.CTk()
 app.title("FFormat")
-app.geometry(f"{app.winfo_screenwidth()}x{app.winfo_screenheight()}")
+screen_width = app.winfo_screenwidth()
+screen_height = app.winfo_screenheight()
+window_width = 800
+window_height = 600
+position_top = int((screen_height - window_height) / 2)
+position_right = int((screen_width - window_width) / 2)
+app.geometry(f"{window_width}x{window_height}+{position_right}+{position_top}")
 
 entry_field = ctk.CTkEntry(app, placeholder_text="Select a file to upload or type in the absolute path manually", width=600, height=30)
 entry_field.pack(padx=25, pady=25)
