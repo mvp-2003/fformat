@@ -1,4 +1,5 @@
+import os
+
 def jpeg_to_jpg(entry_field):
-    # Fixing mistakes
+    # will implement later
     pass
-    
