@@ -1,5 +1,4 @@
 import os
-from tkinter import font
 
 def addfile(entry_field, file_name_label, extension_label, no_file_label):
     filepath = entry_field.get()
