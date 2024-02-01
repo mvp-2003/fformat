@@ -1,9 +1,9 @@
+build==1.0.3
 customtkinter==5.2.2
+debugpy==1.8.0
+packaging==23.2
+pillow==10.2.0
 psutil==5.9.8
 pyinstaller==6.3.0
 pyinstaller-hooks-contrib==2024.0
 pyproject_hooks==1.0.0
-pillow==10.2.0
-build==1.0.3
-debugpy==1.8.0
-packaging==23.2
