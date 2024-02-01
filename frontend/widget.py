@@ -50,7 +50,7 @@ convert_button = ctk.CTkButton(app, text="Convert", fg_color="green", command=la
 convert_button.pack(padx=25, pady=25)
 convert_button.place(x=725, y=325)
 
-new_file_label = ctk.CTkLabel(app, text="New file:", font=("Arial", 16), fg_color="gray", height=30, width=600)
+new_file_label = ctk.CTkLabel(app, text="New file:", font=("Arial", 16), fg_color="gray", height=30, width=500)
 new_file_label.pack(padx=25, pady=25)
 new_file_label.place(x=360, y=400)
 
@@ -66,7 +66,7 @@ folder_select = ctk.CTkLabel(app, text="Selected folder: ", font=("Arial", 16))
 folder_select.pack(padx=25, pady=25)
 folder_select.place(x=150, y=525)
 
-selected_folder_name = ctk.CTkLabel(app, text="", font=("Arial", 16), fg_color="gray", height=30, width=850)
+selected_folder_name = ctk.CTkLabel(app, text="", font=("Arial", 16), fg_color="gray", height=30, width=750)
 selected_folder_name.pack(padx=25, pady=25)
 selected_folder_name.place(x=300, y=525)
 
