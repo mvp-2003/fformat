@@ -7,7 +7,7 @@ import os
 
 
 def convert(new_file_label, type_selection, file_name_label, extension_label):
-    if file_name_label.get() == "" or extension_label.get() == "":
+    if file_name_label.cget("text") == "" or extension_label.cget("text") == "":
         new_file_label.configure(text="No file selected / uploaded", text_color="red")
     else:
         newfile = ""
