@@ -47,7 +47,7 @@ type_selection = ctk.CTkComboBox(app, values=types, width=100, height=30)
 type_selection.pack(padx=25, pady=25)
 type_selection.place(x=770, y=425)
 
-save_button = ctk.CTkButton(app, text="Convert & Save", fg_color="green", command=lambda: convert(entry_field, file_name_label, type_selection))
+save_button = ctk.CTkButton(app, text="Convert & Save", fg_color="green", command=lambda: convert(entry_field, file_name_label, type_selection, extension_label))
 save_button.pack(padx=25, pady=25)
 save_button.place(x=710, y=550)
 
