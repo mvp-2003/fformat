@@ -9,14 +9,13 @@ def savefile(new_file_label, saved_file_label):
         saved_file_label.configure(text="No file to save", text_color="red")
     else:
         folder = filedialog.askdirectory()
-        print(f"File: {file}")
-        print(f"Folder: {folder}")
+        #print(f"File: {file}")
+        #print(f"Folder: {folder}")
         file = os.path.normpath(file)
         folder = os.path.normpath(folder)
-
+        
         try:
             shutil.move(file, folder)
             saved_file_label.configure(text=f"File saved at {folder}")
         except Exception as e:
             print(f"An error occurred: {e}")
-            saved_file_label.configure(text=f"An error occurred: {e}")
