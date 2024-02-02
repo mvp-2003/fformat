@@ -21,4 +21,5 @@ def convert(new_file_label, type_selection, file_name_label, extension_label, en
 
         elif extension_label.cget("text") == ".jpg" and type_selection.get() == ".png":
             newfile = jpg_to_png(entry_field)
+            
         new_file_label.configure(text=newfile, text_color="black")

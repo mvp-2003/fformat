@@ -5,5 +5,5 @@ def png_to_jpg(file_name_label):
     if image.mode != "RGB":
         image = image.convert("RGB")
 
-    nfile = image.save(file_name_label+".jpg")
+    nfile = image.save(file_name_label+".jpg", "JPEG")
     return nfile
