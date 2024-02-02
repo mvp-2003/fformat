@@ -47,7 +47,7 @@ type_selection = ctk.CTkComboBox(app, values=types, width=100, height=30)
 type_selection.pack(padx=25, pady=25)
 type_selection.place(x=770, y=425)
 
-convert_button = ctk.CTkButton(app, text="Convert", fg_color="green", command=lambda: convert(new_file_label, type_selection, file_name_label, extension_label))
+convert_button = ctk.CTkButton(app, text="Convert", fg_color="green", command=lambda: convert(new_file_label, type_selection, file_name_label, extension_label, entry_field))
 convert_button.pack(padx=25, pady=25)
 convert_button.place(x=895, y=425)
 
