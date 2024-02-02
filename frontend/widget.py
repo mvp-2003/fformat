@@ -71,7 +71,7 @@ selected_folder_name = ctk.CTkLabel(app, text="", font=("Arial", 16), fg_color="
 selected_folder_name.pack(padx=25, pady=25)
 selected_folder_name.place(x=450, y=525)
 
-save_button = ctk.CTkButton(app, text="Save", fg_color="green", command=lambda: savefile(selected_folder_name.cget("text"), new_file_label.cget("text"), saved_file_label.cget("text")))
+save_button = ctk.CTkButton(app, text="Save", fg_color="green", command=lambda: savefile(selected_folder_name, new_file_label, saved_file_label))
 save_button.pack(padx=25, pady=25)
 save_button.place(x=745, y=600)
 
