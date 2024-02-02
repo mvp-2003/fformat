@@ -9,10 +9,10 @@ def convert(new_file_label, type_selection, file_name_label, extension_label):
     newfile = ""
     if file_name_label.cget("text") == "" or extension_label.cget("text") == "":
         new_file_label.configure(text="No file selected / uploaded", text_color="red")
-    else:
-        if extension_label.cget("text") == type_selection.get():
+
+    elif extension_label.cget("text") == type_selection.get():
             new_file_label.configure(text="File already in this format", text_color="red")
-        
-        elif extension_label.cget("text") == ".jpg" and type_selection.get() == ".jpeg":
+    else:
+        if extension_label.cget("text") == ".jpg" and type_selection.get() == ".jpeg":
             newfile = jpg_to_jpeg(file_name_label)
         new_file_label.configure(text=newfile, text_color="black")
