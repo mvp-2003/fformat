@@ -1,5 +1,5 @@
 import os
 
-def jpg_to_jpeg(file_name_label, extension_label):
-    # will implement later
-    pass
+def jpg_to_jpeg(file_name_label):
+    nfile = file_name_label.cget("text")+".jpeg"
+    return nfile
