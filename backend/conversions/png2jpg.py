@@ -1,5 +1,4 @@
 from PIL import Image
 
-def png_to_jpg(entry_field, filename, new_file_label):
-    # Fixing mistakes
+def png_to_jpg(file_name_label):
     pass
