@@ -1,3 +1,4 @@
+from cgitb import text
 import os
 
 def addfile(entry_field, file_name_label, extension_label, no_file_label):
@@ -7,7 +8,7 @@ def addfile(entry_field, file_name_label, extension_label, no_file_label):
     else:
         file_name_with_extension = os.path.basename(filepath)
         file_name, extension = os.path.splitext(file_name_with_extension)
-        file_name_label.configure(text = file_name)
-        extension_label.configure(text = extension)
+        file_name_label.configure(text = file_name, text_color = "black", font=("Ariel", 16))
+        extension_label.configure(text = extension, text_color = "black", font=("Ariel", 16))
         entry_field.delete(0, "end")
         no_file_label.configure(text = "")
