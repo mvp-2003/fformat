@@ -1,8 +1,8 @@
+from hmac import new
 import customtkinter as ctk
 from backend.light import addfile
 from frontend.filedialog import selectfile
 from backend.channel import convert
-from frontend.savefile import savefile
 
 app = ctk.CTk()
 app.title("FFormat")
@@ -47,19 +47,11 @@ type_selection = ctk.CTkComboBox(app, values=types, width=100, height=30)
 type_selection.pack(padx=25, pady=25)
 type_selection.place(x=770, y=425)
 
-convert_button = ctk.CTkButton(app, text="Convert", fg_color="green", command=lambda: convert(new_file_label, type_selection, file_name_label, extension_label, entry_field))
-convert_button.pack(padx=25, pady=25)
-convert_button.place(x=895, y=425)
-
-new_file_label = ctk.CTkLabel(app, text="New file:", font=("Arial", 16), fg_color="gray", height=30, width=500)
-new_file_label.pack(padx=25, pady=25)
-new_file_label.place(x=530, y=500)
-
 saved_file_label = ctk.CTkLabel(app, text="", font=("Arial", 16), height=30, width=600)
 saved_file_label.pack(padx=25, pady=25)
 saved_file_label.place(x=250, y=550)
 
-save_button = ctk.CTkButton(app, text="Save", fg_color="green", command=lambda: savefile(new_file_label, saved_file_label, extension_label))
+save_button = ctk.CTkButton(app, text="Convert & Save", fg_color="green", command=lambda: convert())
 save_button.pack(padx=25, pady=25)
 save_button.place(x=710, y=550)
 
