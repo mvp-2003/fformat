@@ -2,7 +2,7 @@ import customtkinter as ctk
 from backend.light import addfile
 from frontend.filedialog import selectfile
 from backend.channel import convert
-from frontend.savefile import choose_folder, savefile
+from frontend.savefile import savefile
 
 app = ctk.CTk()
 app.title("FFormat")
@@ -59,7 +59,7 @@ saved_file_label = ctk.CTkLabel(app, text="", font=("Arial", 16), height=30, wid
 saved_file_label.pack(padx=25, pady=25)
 saved_file_label.place(x=530, y=575)
 
-save_button = ctk.CTkButton(app, text="Save", fg_color="green", command=lambda: savefile(new_file_label, saved_file_label, type_selection))
+save_button = ctk.CTkButton(app, text="Save", fg_color="green", command=lambda: savefile(new_file_label, saved_file_label))
 save_button.pack(padx=25, pady=25)
 save_button.place(x=710, y=550)
 
