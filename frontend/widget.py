@@ -1,4 +1,3 @@
-from hmac import new
 import customtkinter as ctk
 from backend.light import addfile
 from frontend.filedialog import selectfile
